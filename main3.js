@@ -44,30 +44,27 @@
 
 // Esercizio 3
 
-// let score=0;
-// let score1=0;
+// let player1=0;
+// let player2=0;
 // let tiri=5;
 
 // for(let i=1; i<=tiri; i++){
 //     let dado= Math.floor(Math.random()*(6-1+1)+1);
-//     score=score+dado;
-//     console.log(`Primo player ha tirato ${dado} il punteggio finale ${score}`);
+//     total=player1 + dado;
+//     console.log(`Player1 ha lanciato numero ${dado}`);
 // }
-
 // for(let x=1; x<=tiri; x++){
 //     let dado1= Math.floor(Math.random()*(6-1+1)+1);
-//     score1=score1+dado1;
-//     console.log(`Secondo player ha tirato ${dado1} il punteggio finale ${score1}`);
+//     total1=player2 + dado1;
+//     console.log(`Player2 ha lanciato numero ${dado1}`);
 // }
-
-// if(score == score1){
-//     console.log(`La sfida finisce in parità`)
-// }else if(score<score1){
-//     console.log(`Ha vinto player 2`);
-// }else if(score>score1){
-//     console.log(`Ha vinto player 1`);
-
-// }
+// if(total == total1){
+//     console.log(`La partita finisce in parità`)
+//     }else if(total > total1){
+//         console.log(`Player 1 ha vinto finalizzando totale punti ${total}`)
+//     }else if(total < total1){
+//         console.log(`Player 2 ha vinto finalizzando totale punti ${total1}`)
+//     }
 
 // ESERCIZIO DA COLLOQUIO TECNICO :
 // Scrivere un programma che permetta di stampare in console tutti i numeri da 1 a N: - N dovra’ rappresentare il parametro massimo - tutti i numeri multipli di 3 siano sostituiti dalla stringa 'Fizz', - tutti i numeri multipli di 5 siano sostituiti dalla stringa 'Buzz'- e tutti i numeri multipli di 15 siano sostituiti dalla stringa 'fizzBuzz'
