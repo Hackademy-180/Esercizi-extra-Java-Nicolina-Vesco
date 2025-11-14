@@ -72,16 +72,28 @@
 // ESERCIZIO DA COLLOQUIO TECNICO :
 // Scrivere un programma che permetta di stampare in console tutti i numeri da 1 a N: - N dovra’ rappresentare il parametro massimo - tutti i numeri multipli di 3 siano sostituiti dalla stringa 'Fizz', - tutti i numeri multipli di 5 siano sostituiti dalla stringa 'Buzz'- e tutti i numeri multipli di 15 siano sostituiti dalla stringa 'fizzBuzz'
 
-
-for(let num=1; num<=50; num++){
-    if(num % 3 === 0 && num % 5 != 0 && num % 15 != 0){
-        console.log("Fizz");
-    }else if(num %5 === 0 && num %3 !=0 && num % 15 !=0){
-        console.log("Buzz");
-    }else if(num %15 === 0 && num %3 === 0 && num %5 === 0){
-        console.log("fizzBuzz");
-    }else{
-            console.log(num);
+// Metodo 1
+// for(let num=1; num<=50; num++){
+//     if(num % 3 === 0 && num % 5 != 0 && num % 15 != 0){
+//         console.log("Fizz");
+//     }else if(num %5 === 0 && num %3 !=0 && num % 15 !=0){
+//         console.log("Buzz");
+//     }else if(num %15 === 0 && num %3 === 0 && num %5 === 0){
+//         console.log("fizzBuzz");
+//     }else{
+//             console.log(num);
     
+//     }
+// }
+// Metodo 2
+for(let num=1; num<=50; num++){
+    if(num % 15 === 0){
+        console.log("fizzBuzz");
+    }else if(num % 5 === 0){
+        console.log("Buzz");
+    }else if(num % 3 === 0){
+        console.log("Fizz");
+    }else{
+        console.log(num);
     }
 }
